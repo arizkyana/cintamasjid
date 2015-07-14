@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_material_dark"
+    >
+
+
+    <!-- Untuk menampilkan kiblat -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:paddingTop="120px"
+        android:layout_x="40px"
+        android:paddingBottom="5px"
+        android:id="@+id/layout">
+
+        <app.rasendriya.cintamasjid.view.KiblatView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="fill|center" android:id="@+id/arahKiblat"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_below="@id/arahKiblat"
+
+        android:textColor="#ffffff99"
+        android:layout_x="20px"
+        android:layout_y="382px"
+        />
+    <!-- 	<Button
+            android:id="@+id/cekMap"
+            android:text="cek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_x="260px"
+            android:layout_y="350px"
+            />
+     -->
+</AbsoluteLayout>

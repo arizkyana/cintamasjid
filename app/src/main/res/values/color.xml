@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#a42600</color>
+    <color name="primary_pressed">#f73f08</color>
+    <color name="ripple">#de3705</color>
+    <!--<color name="background">#FFF0A5</color>-->
+    <color name="background">#ececec</color>
+    <color name="white">#ececec</color>
+    <color name="border">#2c2922</color>
+    <color name="backgroundList">#bbb293</color>
+    <color name="backgroundList_light">#ffbbb293</color>
+
+    <color name="background_color">#ffffffff</color>
+    <color name="marker_color">@color/primary_pressed</color>
+    <color name="text_color">#ff000000</color>
+
+    <color name="green">#8FCC85</color>
+    <color name="blue">#ff33b5e5</color>
+
+    <color name="bg_slide">#f15d28</color>
+
+    <color name="ColorPrimary">#f15d28</color>
+    <color name="ColorPrimaryDark">#f15d28</color>
+    <color name="tabsScrollColor">#FFFFFF</color>
+</resources>

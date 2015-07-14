@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linRow"
+    android:background="@color/backgroundList"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:minWidth="100dp"
+        android:padding="10dp"
+        android:textColor="#333"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_speaker"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ToggleButton
+            android:id="@+id/btn_speaker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/selector_speaker"
+            android:clickable="false"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/primary_pressed"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+</LinearLayout>

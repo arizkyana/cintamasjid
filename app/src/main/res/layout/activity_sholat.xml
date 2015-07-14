@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:background="@color/white"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="261dp"
+        android:background="@drawable/masjid"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/primary"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bandung, Indonesia"
+                android:id="@+id/currentAddress"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:id="@+id/content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="20 Jumadil Awal 1436 H"
+                android:id="@+id/hijriah"
+                android:textSize="15dp" android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DZUHUR"
+                android:id="@+id/jenisWaktu"
+                android:layout_below="@+id/hijriah"
+                android:layout_centerHorizontal="true"
+                android:textSize="60dp"
+                android:clickable="true"
+                android:padding="0dp"
+                style="@style/shadowText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="12:00"
+                android:id="@+id/waktuSholat"
+                android:layout_below="@+id/jenisWaktu"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                style="@style/shadowText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="NEXT ASHAR 15:01"
+                android:id="@+id/nextWaktuSholat"
+                android:layout_marginTop="34dp"
+                android:layout_below="@+id/waktuSholat"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="NOW"
+                android:id="@+id/textView4"
+                android:textSize="20dp"
+                android:padding="0dp"
+                android:layout_below="@+id/jenisWaktu"
+                android:layout_alignStart="@+id/jenisWaktu"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/backgroundList">
+        <app.rasendriya.cintamasjid.view.KiblatView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="fill|center" android:id="@+id/arahKiblat"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="KIBLAT"
+            android:id="@+id/textKiblat"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>
